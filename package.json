@@ -1,8 +1,8 @@
 {
-  "name": "@rbxts/rbxts-firebase-rtdb",
+  "name": "@rbxts/firebase-rtdb",
   "version": "1.0.0",
   "description": "",
-  "main": "out/init.lua",
+  "main": "RBXFirebase.lua",
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
@@ -19,10 +19,10 @@
     "url": "https://github.com/SpencerDevv/rbxts-firebase-rtdb/issues"
   },
   "homepage": "https://github.com/SpencerDevv/rbxts-firebase-rtdb#readme",
-  "types": "out/index.d.ts",
+  "types": "index.d.ts",
   "files": [
-    "out",
-    "!**/*.tsbuildinfo"
+    "index.d.ts",
+    "RBXFirebase.lua"
   ],
   "publishConfig": {
     "access": "public"
