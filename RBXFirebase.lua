@@ -5,9 +5,6 @@
 		As stated, Update methods are different, and this difference is the added #snapshot# argument to their methods.
 		The #snapshot# argument is optional and does not need to be supplied, however, when supplied, will prevent the module
 		from re-downloading from your database and will instead use the data supplied.
-
-	All methods have appropriate source-docs and will also be documented on the Github:
-
 ]]
 
 local HttpService = game:GetService("HttpService")
