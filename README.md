@@ -1,4 +1,4 @@
-# @rbxts/firebase-rtdb - **IN PROGRESS**
+# @rbxts/firebase-rtdb
 
 roblox-ts typings for RBLX-Firebase for Firebase's **RealTime DataBase**
 
