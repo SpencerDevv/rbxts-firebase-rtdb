@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/firebase-rtdb",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "",
 	"main": "init.lua",
 	"typings": "index.d.ts",
