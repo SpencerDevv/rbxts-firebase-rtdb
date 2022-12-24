@@ -1,11 +1,11 @@
-# @rbxts/firebase-rtdb
+# @rbxts/firebase-rtdb - **IN PROGRESS**
 
 roblox-ts typings for RBLX-Firebase for Firebase's **RealTime DataBase**
 
 ## Example Usage
 ```ts
 import FirebaseService from "@rbxts/firebase-rtdb"
-const Firebase = FirebaseService(DB_URL, AUTH_KEY);
+const Firebase = FirebaseService("YOUR DB URL", "YOUR AUTH KEY");
 
 const BansData = Firebase.GetFirebase("Bans"); // Gets the Firebase at the directory "Bans"
 const [banSuccess] = BansData.SetAsync("Player_UID", true); // sets the key "Player_UID" to the value true (returns true if successful)

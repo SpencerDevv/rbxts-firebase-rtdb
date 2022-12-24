@@ -1,43 +1,45 @@
 interface RTDBInstance {
-  /*
+  /**
    * Gets the value of the database at key
+   * @param {string} key
    * @return value
    */
   GetAsync(key: string): unknown | void;
 
-  /*
+  /**
    * Set the value of the database at key
-   * @return [success, responseInfo]
+   * @returns {[boolean, RequestAsyncResponse]} [success, responseInfo]
    */
   SetAsync(
     key: string,
     value: unknown | void,
-    method: string
+    method?: string
   ): [boolean, RequestAsyncResponse];
 
-  /*
+  /**
    * Deletes key in database
    * @return [success, responseInfo]
    */
   DeleteAsync(key: string): [boolean, RequestAsyncResponse];
 
-  /*
+  /**
    * Increments the value at key by delta
-   * @return [success, responseInfo]
+   * @returns [success, responseInfo]
    */
   IncrementAsync(key: string, delta: number): [boolean, RequestAsyncResponse];
 
-  /*
-   * Updates the value at key by the result of the callback
-   * @return [success, responseInfo]
-   */
+  /**
+  * Updates the value at key by the result of the callback
+  * @param {string} key
+  * @returns {[boolean, RequestAsyncResponse]} [success, responseInfo]
+  */
   UpdateAsync(
     key: string,
     callback: (old: unknown) => unknown,
     snapshot: unknown
-  );
+  ): [boolean, RequestAsyncResponse];
 
-  /*
+  /**
    * Updates multiple values at different keys by the result of the callback
    * @return [success, responseInfo]
    */
@@ -46,7 +48,7 @@ interface RTDBInstance {
     keyValues: Map<string, unknown>,
     callbacks: Map<string, (old: unknown) => unknown>,
     snapshot: unknown
-  );
+  ): [boolean, RequestAsyncResponse];
 }
 
 interface FireBase {
