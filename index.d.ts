@@ -36,7 +36,7 @@ interface RTDBInstance {
   UpdateAsync(
     key: string,
     callback: (old: unknown) => unknown,
-    snapshot: unknown
+    snapshot?: unknown
   ): [boolean, RequestAsyncResponse];
 
   /**
@@ -47,7 +47,7 @@ interface RTDBInstance {
     baseKey: string,
     keyValues: Map<string, unknown>,
     callbacks: Map<string, (old: unknown) => unknown>,
-    snapshot: unknown
+    snapshot?: unknown
   ): [boolean, RequestAsyncResponse];
 }
 

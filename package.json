@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/firebase-rtdb",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "",
 	"main": "init.lua",
 	"typings": "index.d.ts",
@@ -11,6 +11,10 @@
 		"@rbxts/compiler-types": "^1.3.3-types.1",
 		"@rbxts/types": "^1.0.634"
 	},
+  "repository": {
+		"type": "git",
+    "url": "https://github.com/SpencerDevv/rbxts-firebase-rtdb"
+  },
 	"files": [
 		"init.lua",
 		"index.d.ts"
